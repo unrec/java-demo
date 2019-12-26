@@ -26,8 +26,9 @@ public class DatabaseDemo {
         properties.put("serverTimezone", "Europe/Moscow");
 
         // print before update
-//        System.out.println("Before update:");
-//        printAllData();
+        System.out.println("Before update:");
+        printAllData();
+        printAllData();
 
         // set random rating for random user
 //        int userID = ThreadLocalRandom.current().nextInt(4);
@@ -48,7 +49,7 @@ public class DatabaseDemo {
 //        final String SQL = "{call findbyid(?, ?)}";
 //        System.out.println(runProcedure(SQL));
 
-        printMetaData();
+//        printMetaData();
 
     } // end of main
 
