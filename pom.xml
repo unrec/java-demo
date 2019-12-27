@@ -15,23 +15,26 @@
         <lombok.version>1.18.8</lombok.version>
         <junit.version>4.12</junit.version>
         <mysql.version>8.0.18</mysql.version>
+        <zip4j.version>2.2.8</zip4j.version>
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-
+        <dependency>
+            <groupId>net.lingala.zip4j</groupId>
+            <artifactId>zip4j</artifactId>
+            <version>${zip4j.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
