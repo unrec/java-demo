@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 public class SupplierDemo {
     public static void main(String[] args) throws IOException {
         List<String> list;
-        try (Stream<String> stream = Files.lines(Paths.get("words.txt"))) {
+        try (Stream<String> stream = Files.lines(Paths.get("src/main/resources/words.txt"))) {
             list = stream
                     .collect(Collectors.toList());
         }
@@ -21,4 +21,4 @@ public class SupplierDemo {
         System.out.println("There are " + list.size() + " words.");
         System.out.println("Random word: " + list.get(lambda.get()));
     }
-} // end of class
+}

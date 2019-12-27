@@ -4,8 +4,8 @@ import net.lingala.zip4j.ZipFile;
 import net.lingala.zip4j.exception.ZipException;
 
 public class UnzipDemo {
-    public static final String ZIP_PATH = "src/main/java/io/zip/temp.zip";
-    public static final String ZIP_DESTINATION = "src/main/java/io/zip";
+    public static final String ZIP_PATH = "src/main/resources/temp.zip";
+    public static final String ZIP_DESTINATION = "src/main/resources/unzipped";
 
     public static void main(String[] args) {
 

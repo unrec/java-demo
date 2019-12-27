@@ -19,6 +19,6 @@ public class PredicateDemo {
             System.out.println(day + "- is weekend? - " + checker.test(day));
 //            System.out.println(day + "- is weekend? - " + lambda.test(day));  // using lambda
         }
-        System.out.println("Weekend dayss: " + filter(days, lambda));
+        System.out.println("Weekend days: " + filter(days, lambda));
     }
 } // end of class
