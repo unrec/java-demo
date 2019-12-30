@@ -16,6 +16,7 @@
         <junit.version>4.12</junit.version>
         <mysql.version>8.0.18</mysql.version>
         <zip4j.version>2.2.8</zip4j.version>
+        <commons-lang3.version>3.9</commons-lang3.version>
     </properties>
 
     <dependencies>
@@ -34,6 +35,11 @@
             <groupId>net.lingala.zip4j</groupId>
             <artifactId>zip4j</artifactId>
             <version>${zip4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
         </dependency>
     </dependencies>
 
