@@ -1,13 +1,9 @@
-package com.epam.vtbbulpm.flc.csvcheckerworker.util;
+package io.populate;
 
-import com.epam.vtbbulpm.flc.csvcheckerworker.util.FilePopulator;
-import lombok.extern.slf4j.Slf4j;
+public class FilePopulateDemo {
 
-@Slf4j
-public class FilePopulateApplication {
-
-    public static final String CSV_ORIGIN_PATH = "src/test/resources/sample.csv";
-    public static final String CSV_POPULATED_PATH = "src/test/resources/too_big.csv";
+    public static final String CSV_ORIGIN_PATH = "src/main/java/resources/source.csv";
+    public static final String CSV_POPULATED_PATH = "src/main/java/resources/populated_output.csv";
     public static final int COPIES_AMOUNT = 100_001;
 
     public static void main(String[] args) {

@@ -1,10 +1,8 @@
-package com.epam.vtbbulpm.flc.csvcheckerworker.util;
+package io.populate;
 
 import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import java.io.*;
 
-@Slf4j
 @NoArgsConstructor
 public class FilePopulator {
 
@@ -28,7 +26,7 @@ public class FilePopulator {
                 out.write(strings);
             }
         } catch (Exception e) {
-            log.warn(e.getMessage());
+//            log.warn(e.getMessage());
         }
     }
 }

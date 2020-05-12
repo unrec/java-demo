@@ -18,7 +18,7 @@ public class ByteBufferDemo {
         int data;
 
         try (InputStream input = new ByteArrayInputStream(bytes);
-             OutputStream output = new FileOutputStream("buffer.txt")) {
+             OutputStream output = new FileOutputStream("src/main/java/resources/buffer.txt")) {
 
             data = input.read();
             while (data != -1) {

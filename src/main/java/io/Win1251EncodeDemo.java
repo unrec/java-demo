@@ -1,10 +1,10 @@
-package com.epam.vtbbulpm.flc.csvcheckerworker.util;
+package io;
 
 import java.io.*;
 
-public class Win1251EncodeApplication {
-    private static final String CSV_ORIGIN_PATH = "src/test/resources/correct_charset.csv";
-    private static final String CSV_OUTPUT_PATH = "src/test/resources/correct_charset2.csv";
+public class Win1251EncodeDemo {
+    private static final String CSV_ORIGIN_PATH = "src/test/resources/correct_charset_input.csv";
+    private static final String CSV_OUTPUT_PATH = "src/test/resources/correct_charset_output.csv";
     public static final String SELECTED_CHARSET = "windows-1251";
 
     public static void main(String[] args) throws IOException {
