@@ -1,7 +1,6 @@
 package batch;
 
 import com.google.common.collect.Iterables;
-import com.google.common.collect.Iterators;
 
 import java.util.List;
 import java.util.stream.Collectors;
