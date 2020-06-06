@@ -18,8 +18,8 @@ public class ThreadPoolDemo {
         list.forEach(element ->
                 executorService.execute(() -> {
                     String thread = Thread.currentThread().getName();
-//                    System.out.printf("Thread: %s, element: %s\n",
-//                            thread, element);
+                    System.out.printf("Thread: %s, element: %s\n",
+                            thread, element);
                     counter.put(thread, counter.getOrDefault(thread, 0) + 1);
 
                 }));
