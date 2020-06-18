@@ -25,9 +25,10 @@ public class ThreadPoolDemo {
                 }));
         executorService.shutdown();
         Thread.sleep(100);
-        System.out.println("Threads used: "+ counter.keySet().size());
+        System.out.println("Threads used: " + counter.keySet().size());
         Thread.sleep(500);
         counter.forEach((k, v) -> System.out.println(String.format("Key: %s, value: %s", k, v)));
+        System.out.printf("Sum of elements: %s\n",counter.values().stream().mapToInt(Integer::intValue).sum());
     }
 
     private static List<Integer> generateBatch(int amount) {
