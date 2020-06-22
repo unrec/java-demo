@@ -1,4 +1,4 @@
-package util;
+package util.uuid;
 
 import java.util.UUID;
 
