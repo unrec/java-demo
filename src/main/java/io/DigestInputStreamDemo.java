@@ -19,6 +19,16 @@ public class DigestInputStreamDemo {
     private static final String PATH3 = "src/main/resources/digest/sample_03.txt";
     private static final List<String> PATHS = List.of(PATH1, PATH2, PATH3);
 
+    private static MessageDigest md;
+
+    static {
+        try {
+            md = MessageDigest.getInstance("SHA-1");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) throws NoSuchAlgorithmException, IOException {
 
         // get hash using DigestInputStream
@@ -29,7 +39,7 @@ public class DigestInputStreamDemo {
     }
 
     public static void getViaDigest() throws NoSuchAlgorithmException, IOException {
-        MessageDigest md = MessageDigest.getInstance("SHA-1");
+//        MessageDigest md = MessageDigest.getInstance("SHA-1");
         for (String path : PATHS) {
             try (InputStream is = new FileInputStream(new File(Paths.get(path).toUri()));
                  DigestInputStream di = new DigestInputStream(is, md)) {
