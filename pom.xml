@@ -22,7 +22,9 @@
         <commons-io.version>2.6</commons-io.version>
         <jackson.version>2.11.0</jackson.version>
         <guava.version>29.0-jre</guava.version>
-
+        <commons-codec.version>1.14</commons-codec.version>
+        <commons-fileupload.version>1.4</commons-fileupload.version>
+        <slf4j.version>1.7.30</slf4j.version>
     </properties>
 
     <dependencies>
@@ -59,9 +61,14 @@
             <version>${commons-io.version}</version>
         </dependency>
         <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>${commons-fileupload.version}</version>
+        </dependency>
+        <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <version>1.9</version>
+            <version>${commons-codec.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -78,6 +85,11 @@
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
 
     </dependencies>
 
@@ -87,8 +99,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>9</source>
-                    <target>9</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>

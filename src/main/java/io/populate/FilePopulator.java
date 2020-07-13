@@ -1,8 +1,17 @@
 package io.populate;
 
 import lombok.NoArgsConstructor;
-import java.io.*;
+import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
+import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
 
+@Slf4j
 @NoArgsConstructor
 public class FilePopulator {
 
@@ -25,8 +34,8 @@ public class FilePopulator {
             for (int i = 0; i < copyTimes; i++) {
                 out.write(strings);
             }
-        } catch (Exception e) {
-//            log.warn(e.getMessage());
+        } catch (IOException e) {
+            log.error(e.getMessage());
         }
     }
 }
