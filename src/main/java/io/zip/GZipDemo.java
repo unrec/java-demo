@@ -10,7 +10,7 @@ import java.util.zip.GZIPOutputStream;
 public class GZipDemo {
     public static void main(String[] args) throws IOException {
 
-        File sourceFile = new File("src/main/resources/sample.txt");
+        File sourceFile = new File("src/main/resources/words.txt");
         File outputFile = new File("src/main/resources/sample.txt.gz");
 
         try (FileInputStream fileInputStream = new FileInputStream(sourceFile);
