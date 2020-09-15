@@ -17,8 +17,15 @@ public class DtoToMapDemo {
         SupplierDto dto = getDto();
         Map<String, Object> map = mapper.convertValue(dto, new TypeReference<>() {});
         System.out.println("map = " + map);
-    }
 
+        Map<String, Object> settings = (Map) map.get("settings");
+        System.out.println("settings = " + settings);
+        System.out.println("isEnabled = " + settings.get("isEnabled"));
+        System.out.println(settings.get("isEnabled").getClass());
+
+        Boolean isEnabled = Boolean.valueOf((String) settings.get("isEnabled"));
+        System.out.println("isEnabled = " + isEnabled);
+    }
 
     private static SupplierDto getDto() {
         return new SupplierDto()
@@ -33,9 +40,11 @@ public class DtoToMapDemo {
                 .setDownloadUrl("http://some.url.com")
                 .setDeliveryVariantsUrl("http://some.variants.url.com")
                 .setReportEmailList("admin@supplier.com")
+                .setEnabled(false)
                 .setSettings(Map.of(
                         "email", "abc@xyz.com",
                         "price", "current",
-                        "tax", "zero"));
+                        "tax", "zero",
+                        "isEnabled", "true"));
     }
 }

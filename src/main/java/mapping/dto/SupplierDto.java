@@ -26,5 +26,6 @@ public class SupplierDto {
     private String deliveryVariantsUrl;
     private String reportEmailList;
 
+    private Boolean enabled;
     private Map<String, Object> settings;
 }
