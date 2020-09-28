@@ -11,4 +11,4 @@ public class RegexDemo {
             throw new IllegalArgumentException("Invalid String");
         } else System.out.println("Input is ok.");
     }
-} // end of class
+}

@@ -30,4 +30,4 @@ public class Mock {
         this.status = status;
     }
 
-} // end of class
+}

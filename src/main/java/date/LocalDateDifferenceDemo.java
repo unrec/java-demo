@@ -15,4 +15,4 @@ public class LocalDateDifferenceDemo {
         System.out.println("Years between 1st and 2nd dates: " + yearsBetween); // should be 1
         System.out.println("Years between 1st date and now: " + yearsUpToday); // should be 9
     }
-} // end of class
+}

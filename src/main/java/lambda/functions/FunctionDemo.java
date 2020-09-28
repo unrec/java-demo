@@ -12,4 +12,4 @@ public class FunctionDemo {
         Long resultLambda = lambda.apply(8L);
         System.out.println("resultLambda = " + resultLambda);
     }
-} // end of class
+}

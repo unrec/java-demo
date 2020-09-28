@@ -51,7 +51,7 @@ public class DatabaseDemo {
 
 //        printMetaData();
 
-    } // end of main
+    }
 
     private static void printAllData() {
         try (Connection connection = DriverManager.getConnection(url, properties);
@@ -167,4 +167,4 @@ public class DatabaseDemo {
         return null;
     }
 
-} // end of class
+}

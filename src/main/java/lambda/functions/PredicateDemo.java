@@ -21,4 +21,4 @@ public class PredicateDemo {
         }
         System.out.println("Weekend days: " + filter(days, lambda));
     }
-} // end of class
+}

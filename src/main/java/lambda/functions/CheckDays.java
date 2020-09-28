@@ -21,4 +21,4 @@ public class CheckDays implements Predicate {
                 .filter(predicate)
                 .collect(Collectors.<DayOfWeek>toList());
     }
-} // end of class
+}

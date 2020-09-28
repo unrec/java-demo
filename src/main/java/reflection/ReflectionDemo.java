@@ -96,7 +96,7 @@ public class ReflectionDemo {
             e.printStackTrace();
         }
 
-    } // end of main
+    }
 
     public static void printGettersSetters(Class aClass) {
         Method[] methods = aClass.getMethods();

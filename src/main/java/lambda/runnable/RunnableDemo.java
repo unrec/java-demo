@@ -7,4 +7,4 @@ public class RunnableDemo {
         Thread thread = new Thread(speaker);
         thread.start();
     }
-} // end of class
+}

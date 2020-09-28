@@ -18,4 +18,4 @@ public class User {
                 ", rating=" + rating +
                 '}';
     }
-} // end of class
+}

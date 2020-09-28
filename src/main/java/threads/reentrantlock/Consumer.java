@@ -11,4 +11,4 @@ class Consumer implements Runnable{
             store.get();
         }
     }
-} // end of class
+}

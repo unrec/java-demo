@@ -33,4 +33,4 @@ public class PocketThread extends Thread {
         this.changeStatus = addStatus;
     }
 
-} // end of class
+}

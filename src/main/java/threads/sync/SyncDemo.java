@@ -14,4 +14,4 @@ public class SyncDemo {
 
         System.out.println(counter.count);
     }
-} // end of class
+}

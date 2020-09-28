@@ -13,4 +13,4 @@ public class UnaryDemo {
         System.out.println("Left - " + leftPart);
         System.out.println("Right - " + rightPart);
     }
-} // end of class
+}
