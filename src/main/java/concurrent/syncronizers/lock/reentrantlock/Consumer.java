@@ -1,4 +1,4 @@
-package threads.reentrantlock;
+package concurrent.syncronizers.lock.reentrantlock;
 
 class Consumer implements Runnable{
 

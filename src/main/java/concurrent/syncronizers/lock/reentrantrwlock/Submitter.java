@@ -1,4 +1,4 @@
-package threads.reentrantrwlock;
+package concurrent.syncronizers.lock.reentrantrwlock;
 
 import org.apache.commons.lang3.StringUtils;
 import java.util.Random;

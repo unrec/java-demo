@@ -1,4 +1,4 @@
-package threads.reentrantrwlock;
+package concurrent.syncronizers.lock.reentrantrwlock;
 
 import java.util.Random;
 import java.util.concurrent.ExecutorService;

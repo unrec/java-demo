@@ -1,4 +1,4 @@
-package threads.reentrantrwlock;
+package concurrent.syncronizers.lock.reentrantrwlock;
 
 public class Pocket {
     private int money;

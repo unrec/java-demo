@@ -1,4 +1,4 @@
-package threads.reentrantlock;
+package concurrent.syncronizers.lock.reentrantlock;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
