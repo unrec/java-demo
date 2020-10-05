@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding ="UTF-8"?>
+<data>
+    <users>
+        <user id = "1">
+            <firstname>John</firstname>
+            <lastname>Smith</lastname>
+            <age>20</age>
+            <country>USA</country>
+            <verifyed>true</verifyed>
+        </user>
+
+        <user id = "2">
+            <firstname>Jane</firstname>
+            <lastname>Doe</lastname>
+            <age>22</age>
+            <country>Canada</country>
+            <verifyed>false</verifyed>
+        </user>
+
+        <user id = "3">
+            <firstname>Dom</firstname>
+            <lastname>West</lastname>
+            <age>42</age>
+            <country>Mexico</country>
+            <verifyed>true</verifyed>
+        </user>
+    </users>
+</data>
