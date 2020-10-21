@@ -1,21 +1,10 @@
 - matrixItemId: 1
-  deliveryPartnerId: 42
-  deliveryPartnerCityCode: 127000
-  destinationCodeFias: fias_code_1
-#  destinationCodeFias: fc9555b1-d88f-4113-aec6-bac31436952e
-  destinationAddress: address_1
   minimumWeight: 0
   maximumWeight: 100
   cost: 88.20
   period: 0
-#  status: ACTIVE
 - matrixItemId: 2
-  deliveryPartnerId: 24
-  deliveryPartnerCityCode: 454000
-  destinationCodeFias: fias_code_2
-  destinationAddress: address_2
   minimumWeight: 0
   maximumWeight: 80
   cost: 70
   period: 0
-#  status: ACTIVE

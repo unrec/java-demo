@@ -1,8 +1,4 @@
 matrixItemId: 2
-deliveryPartnerId: 24
-deliveryPartnerCityCode: 454000
-destinationCodeFias: "fias_code_2"
-destinationAddress: "address"
 minimumWeight: 0
 maximumWeight: 80
 cost: 70
