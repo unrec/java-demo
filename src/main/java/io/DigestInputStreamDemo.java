@@ -1,6 +1,7 @@
 package io;
 
 import org.apache.commons.io.IOUtils;
+import javax.xml.bind.DatatypeConverter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -36,6 +37,9 @@ public class DigestInputStreamDemo {
 
         // get hash using apache.codec library
         getViaLib();
+
+        // get hash using DatatypeConverter class
+        getViaDatatypeConverter();
     }
 
     public static void getViaDigest() throws NoSuchAlgorithmException, IOException {
@@ -59,6 +63,18 @@ public class DigestInputStreamDemo {
                 String sha1Hex = org.apache.commons.codec.digest.DigestUtils.sha1Hex(is);
                 System.out.println("sha1Hex = " + sha1Hex);
             }
+        }
+    }
+
+    public static void getViaDatatypeConverter() throws IOException {
+        for (String path : PATHS) {
+            try (InputStream is = new FileInputStream(new File(Paths.get(path).toUri()));
+                 DigestInputStream di = new DigestInputStream(is, md)) {
+                // read data to compute digest
+                di.readAllBytes();
+            }
+            var hexBinary = DatatypeConverter.printHexBinary(md.digest()).toLowerCase();
+            System.out.println("hexBinary = " + hexBinary);
         }
     }
 
