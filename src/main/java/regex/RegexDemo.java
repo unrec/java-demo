@@ -1,4 +1,4 @@
-package string;
+package regex;
 
 import java.io.IOException;
 import java.util.regex.Pattern;
