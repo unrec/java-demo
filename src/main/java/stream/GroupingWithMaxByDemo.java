@@ -1,5 +1,9 @@
 package stream;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.Comparator;
@@ -17,8 +21,7 @@ public class GroupingWithMaxByDemo {
                 new House(1, "Bedford St", 90, LocalDate.of(2004, 1, 2)),
                 new House(2, "5th Ave", 888, LocalDate.of(2019, 1, 4)),
                 new House(2, "5th Ave", 888, LocalDate.of(1968, 1, 11)),
-                new House(2, "5th Ave", 888, LocalDate.of(1885, 1, 11))
-        );
+                new House(2, "5th Ave", 888, LocalDate.of(1885, 1, 11)));
 
         Map<Integer, Optional<House>> collect = houses.stream()
                 .collect(Collectors.groupingBy(House::getId, Collectors.maxBy(
@@ -30,5 +33,14 @@ public class GroupingWithMaxByDemo {
 
         System.out.println("Actual list:");
         actualList.forEach(System.out::println);
+    }
+
+    @Data
+    @AllArgsConstructor
+    private static class House {
+        Integer id;
+        String streetName;
+        Integer houseNumber;
+        LocalDate date;
     }
 }
