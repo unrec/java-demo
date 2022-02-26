@@ -16,7 +16,7 @@
         <servlet-api.version>4.0.1</servlet-api.version>
         <lombok.version>1.18.8</lombok.version>
         <mysql.version>8.0.18</mysql.version>
-        <zip4j.version>2.2.8</zip4j.version>
+        <zip4j.version>2.9.1</zip4j.version>
         <commons-lang3.version>3.9</commons-lang3.version>
         <commons-io.version>2.6</commons-io.version>
         <jackson.version>2.11.0</jackson.version>
