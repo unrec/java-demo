@@ -19,7 +19,7 @@
         <zip4j.version>2.2.8</zip4j.version>
         <commons-lang3.version>3.9</commons-lang3.version>
         <commons-io.version>2.6</commons-io.version>
-        <jackson.version>2.11.0</jackson.version>
+        <jackson.version>2.12.6.1</jackson.version>
         <guava.version>29.0-jre</guava.version>
         <commons-codec.version>1.14</commons-codec.version>
         <commons-fileupload.version>1.4</commons-fileupload.version>
